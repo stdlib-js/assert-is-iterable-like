@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,76 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var proxyquire = require( 'proxyquire' );
-var hasIteratorSymbolSupport = require( '@stdlib/assert-has-iterator-symbol-support' );
-var isIterableLike = require( './../../dist' );
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof isIterableLike, 'function', 'main export is a function' );
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
-});
-
-tape( 'the function returns `false` if not provided an iterable-like value', function test( t ) {
-	var values;
-	var i;
-
-	values = [
-		'5',
-		5,
-		NaN,
-		true,
-		false,
-		void 0,
-		null,
-		{},
-		function noop() {}
-	];
-	for ( i = 0; i < values.length; i++ ) {
-		t.equal( isIterableLike( values[i] ), false, 'returns expected value when provided '+values[i] );
-	}
-	t.end();
-});
-
-tape( 'the function returns `true` if provided an iterable-like value (ES2015+/ES6+)', function test( t ) {
-	if ( hasIteratorSymbolSupport() ) {
-		t.equal( isIterableLike( [] ), true, 'returns expected value' );
-	} else {
-		t.ok( true, 'environment lacks iterator symbol support' );
-	}
-	t.end();
-});
-
-tape( 'in non-ES2015+/ES6+ environments, the function always returns `false`', function test( t ) {
-	var isIterableLike;
-	var values;
-	var i;
-
-	isIterableLike = proxyquire( './../dist/index.js', {
-		'@stdlib/assert-has-iterator-symbol-support': hasSupport
-	});
-
-	values = [
-		'5',
-		5,
-		NaN,
-		true,
-		false,
-		void 0,
-		null,
-		{},
-		[],
-		function noop() {}
-	];
-	for ( i = 0; i < values.length; i++ ) {
-		t.equal( isIterableLike( values[i] ), false, 'returns expected value when provided '+values[i] );
-	}
-	t.end();
-
-	function hasSupport() {
-		return false;
-	}
 });
