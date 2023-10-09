@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/assert-is-iterable-like",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Test if a value is iterable-like.",
   "license": "Apache-2.0",
   "author": {
@@ -37,11 +37,11 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-has-iterator-symbol-support": "^0.1.0",
+    "@stdlib/assert-has-iterator-symbol-support": "^0.1.1",
     "@stdlib/assert-is-function": "^0.1.1",
     "@stdlib/assert-is-iterator-like": "^0.1.1",
     "@stdlib/assert-is-primitive": "^0.1.1",
-    "@stdlib/symbol-iterator": "^0.1.0",
+    "@stdlib/symbol-iterator": "^0.1.1",
     "@stdlib/utils-constant-function": "^0.1.1"
   },
   "devDependencies": {
