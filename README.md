@@ -42,7 +42,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isIterableLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-iterable-like@esm/index.mjs';
+import isIterableLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-iterable-like@v0.2.0-esm/index.mjs';
 ```
 
 #### isIterableLike( value )
@@ -86,7 +86,7 @@ bool = isIterableLike( {} );
 <body>
 <script type="module">
 
-import isIterableLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-iterable-like@esm/index.mjs';
+import isIterableLike from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-iterable-like@v0.2.0-esm/index.mjs';
 
 var bool = isIterableLike( [] );
 // returns <boolean>
