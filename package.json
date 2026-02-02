@@ -42,7 +42,8 @@
     "@stdlib/assert-is-iterator-like": "^0.2.2",
     "@stdlib/assert-is-primitive": "^0.2.2",
     "@stdlib/symbol-iterator": "^0.2.2",
-    "@stdlib/utils-constant-function": "^0.2.3"
+    "@stdlib/utils-constant-function": "^0.2.3",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
   "devDependencies": {
     "@stdlib/assert-is-boolean": "^0.2.2",
