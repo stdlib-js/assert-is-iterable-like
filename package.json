@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/assert-is-iterable-like",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Test if a value is iterable-like.",
   "license": "Apache-2.0",
   "author": {
@@ -38,14 +38,14 @@
   },
   "dependencies": {
     "@stdlib/assert-has-iterator-symbol-support": "^0.2.2",
-    "@stdlib/assert-is-function": "^0.2.2",
-    "@stdlib/assert-is-iterator-like": "^0.2.2",
-    "@stdlib/assert-is-primitive": "^0.2.2",
+    "@stdlib/assert-is-function": "^0.2.3",
+    "@stdlib/assert-is-iterator-like": "^0.2.3",
+    "@stdlib/assert-is-primitive": "^0.2.3",
     "@stdlib/symbol-iterator": "^0.2.2",
     "@stdlib/utils-constant-function": "^0.2.3"
   },
   "devDependencies": {
-    "@stdlib/assert-is-boolean": "^0.2.2",
+    "@stdlib/assert-is-boolean": "^0.2.3",
     "proxyquire": "^2.0.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
